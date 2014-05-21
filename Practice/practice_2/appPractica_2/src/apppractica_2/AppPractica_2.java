@@ -73,10 +73,9 @@ public class AppPractica_2 {
          }
          */
 
-//Ejwrcicio 4
-        /*
-        
-         int n1;
+//Ejwrcicio 4 padovan
+
+        /*  int n1;
          int A = 1, B = 1, C = 1;
 
          System.out.println("Ingrese un numero entero positivo");
@@ -113,9 +112,7 @@ public class AppPractica_2 {
                 
          }
 
-         }
-         */
-
+         }*/
         //Ejercicio 5 potencias
         /* int n2;
          int n3,r; 
@@ -302,39 +299,43 @@ public class AppPractica_2 {
          System.out.println("En un año tendra:  "  +  q +  "Dolares,");
          */
         //Ejercicio 13
-       /* int h = 00;
-         int m = 00;
-         int s = 00;
-         System.out.println(h + ":" + m + ":" + s);
-        
-         do {
+        int h = 00;
+        int m = 00;
+        int s = 00;
 
-         s = s + 1;
-         System.out.println(h + ":" + m + ":" + s);
-
-         if (s == 59) {
-         s = 1;
-         m = m + 1;
-         System.out.println(h + ":" + m + ":" + s);
-         }
-
-         if (m == 59) {
-         h = h + 1;
-         m = 0;
-         s = 1;
-         System.out.println(h + ":" + m + ":" + s);
-         }
-         if(h==23)
-         {
-                
-         s=s+1;
-         System.err.println(h + ":" + m + ":" + s);
-                
+        do {
+             System.out.println(h + ":" + m + ":" + s);
+            while (s < 59) {
+                s++;
+                System.out.println(h + ":" + m + ":" + s);
+            }
             
-         }
+            
+            if (s == 59) {
+                m++;
+                s = 0;
+                System.out.println(h + ":" + m + ":" + s);
+                
+            }
+         
+                if (m == 59) {
+                    h++;
+                  
+                     s=0;
+                    System.out.println(h + ":" + m + ":" + s);
+                   
 
-         } while (h < 23);
-         */
+                } else {
+                    s++;
+                    
+                }
+                
+                
+
+            
+
+        } while (h < 24);
+
         //Ejercicio 14;
         /* double q = 1000;
  
@@ -348,27 +349,25 @@ public class AppPractica_2 {
          */
         //Ejercicio 15
         /*int cont1=1;
-        int cont2 = 1;
-        int I;
-        String tabla;
+         int cont2 = 1;
+         int I;
+         String tabla;
 
-        do {
+         do {
             
-            do{
-                I =(2*cont1)-1;
+         do{
+         I =(2*cont1)-1;
                 
-            tabla = (I+",");
-            System.out.print(tabla);
-            cont1++;
-            }while(cont1<=cont2);
+         tabla = (I+",");
+         System.out.print(tabla);
+         cont1++;
+         }while(cont1<=cont2);
             
             
-            System.out.println("\n");
-            cont2++;
-           cont1=1;
-        }while (I< 15);
-*/
-    
+         System.out.println("\n");
+         cont2++;
+         cont1=1;
+         }while (I< 15);
+         */
     }
 }
-
