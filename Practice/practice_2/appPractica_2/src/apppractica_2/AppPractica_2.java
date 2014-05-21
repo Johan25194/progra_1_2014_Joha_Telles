@@ -303,38 +303,38 @@ public class AppPractica_2 {
         int m = 00;
         int s = 00;
 
+        System.out.println(h + ":" + m + ":" + s);
         do {
-             System.out.println(h + ":" + m + ":" + s);
+
             while (s < 59) {
                 s++;
                 System.out.println(h + ":" + m + ":" + s);
             }
-            
-            
             if (s == 59) {
-                m++;
                 s = 0;
+                m++;
+
                 System.out.println(h + ":" + m + ":" + s);
-                
+
             }
-         
-                if (m == 59) {
-                    h++;
-                  
-                     s=0;
-                    System.out.println(h + ":" + m + ":" + s);
-                   
 
+            if (m == 59) {
+                h++;
+                if (h > 23) {
+
+                    h = 23;
+                    while (s < 59) {
+                        s = s + 1;
+                        System.out.println(h + ":" + m + ":" + s);
+                    }
                 } else {
-                    s++;
-                    
+                    m = 0;
+                    System.out.println(h + ":" + m + ":" + s);
                 }
-                
-                
 
-            
+            }
 
-        } while (h < 24);
+        } while ((m <= 58) && (s <= 58));
 
         //Ejercicio 14;
         /* double q = 1000;
