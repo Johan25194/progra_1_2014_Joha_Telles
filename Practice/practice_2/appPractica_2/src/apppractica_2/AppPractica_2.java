@@ -116,7 +116,7 @@ public class AppPractica_2 {
          }
          */
 
-        //Ejercicio 5
+        //Ejercicio 5 potencias
         /* int n2;
          int n3,r; 
          float R=0;
@@ -193,84 +193,182 @@ public class AppPractica_2 {
          +"La cantidad de impares son:"+imp);
         
          */
-        //Ejercicio 8
+        //Ejercicio 8 tabla de multiplicar
         /*
-        char opt;
+         char opt;
 
-        cont = 1;
-        char respueta = 's';
-        int n;
-        int tabla;
+         cont = 1;
+         char respueta = 's';
+         int n;
+         int tabla;
+
+         do {
+         System.out.println("Ingrese una opción:"
+         + "\n" + "1.for."
+         + "\n" + "2.Do while."
+         + "\n" + "3.While."
+         + "\n" + "4.Salir."
+         );
+         opt = (teclado.nextLine()).charAt(0);
+         switch (opt) {
+         case '1': {
+         System.out.println("Ingrese el numero de una tabla de multiplicar");
+         n = Integer.parseInt(teclado.nextLine());
+         for (int i = 1; i <= 15; i++) {
+         tabla = n * i;
+         System.out.println(n + "*" + i + "=" + tabla); }
+
+         }
+         break;
+         case '2': {
+         System.out.println("Ingrese el numero de una tabla de multiplicar");
+         n = Integer.parseInt(teclado.nextLine());
+         do {
+         tabla = n * cont;
+         System.out.println(n + "*" + cont + "=" + tabla);
+         cont++;
+
+         } while (cont <= 15);
+         }
+         break;
+         case '3':{
+         System.out.println("Ingrese el numero de una tabla de multiplicar");
+         n = Integer.parseInt(teclado.nextLine());
+         while(cont<=15){
+                    
+         tabla = n * cont;
+         System.out.println(n + "*" + cont + "=" + tabla);
+         cont++;
+         }        
+         }
+         break;
+         }
+         System.out.println("Desea continuar si/No");
+         respueta = teclado.nextLine().charAt(0);
+         } while ((respueta == 's') || (respueta == 'S'));
+         */
+        //ejercicio 9.
+       /* int n;
+         int s = 0;
+         int cont2=0;
+         int cont1=10;
+        
+         while (cont1>=1) { 
+         System.out.println("Ingrese la nota");
+         n=Integer.parseInt(teclado.nextLine());
+         s=s+n;
+         cont1--;
+         cont2++;   
+         }
+         System.out.println("El promedio es:"+ s/cont2);
+         */
+        //Ejercicio 10;
+       /* int n;
+         int p;
+         int S = 0;
+         int cont2 = 0;
+         cont =10;
+         do {
+         System.out.println("Ingrese las notas");
+         n = Integer.parseInt(teclado.nextLine());
+         cont2++;
+         S = S + n;
+         cont--;
+         } while ((cont >= 1) && (n>= 1));
+         p = S / cont2;
+         System.out.println("Su promedio es de: "+ p);
+         */
+        //Ejercicio 11 dolares
+/*
+         int cont1 = 10;
+         int s = 0;
+        
+         while (cont1>=1) {
+         s=1*560;
+         System.out.print(s+";");
+         cont1--;  
+         }
+         System.out.print("="+560*10);
+         */
+        //Ejercicio 12
+        /*
+         double q = 1000;
+         int cont1 = 0;
+         while(cont1<=12)
+         {
+         q =(q *0.02)+q;
+         cont1++;
+         }
+         System.out.println("En un año tendra:  "  +  q +  "Dolares,");
+         */
+        //Ejercicio 13
+       /* int h = 00;
+         int m = 00;
+         int s = 00;
+         System.out.println(h + ":" + m + ":" + s);
+        
+         do {
+
+         s = s + 1;
+         System.out.println(h + ":" + m + ":" + s);
+
+         if (s == 59) {
+         s = 1;
+         m = m + 1;
+         System.out.println(h + ":" + m + ":" + s);
+         }
+
+         if (m == 59) {
+         h = h + 1;
+         m = 0;
+         s = 1;
+         System.out.println(h + ":" + m + ":" + s);
+         }
+         if(h==23)
+         {
+                
+         s=s+1;
+         System.err.println(h + ":" + m + ":" + s);
+                
+            
+         }
+
+         } while (h < 23);
+         */
+        //Ejercicio 14;
+        /* double q = 1000;
+ 
+         cont = 0;
+        
+         do { 
+         q = (q *0.02)+q;
+         cont++;
+         } while (q<=1500);
+         System.out.println("Transcurriran"+"  "+cont+"  "+" mese");
+         */
+        //Ejercicio 15
+        /*int cont1=1;
+        int cont2 = 1;
+        int I;
+        String tabla;
 
         do {
-            System.out.println("Ingrese una opción:"
-                    + "\n" + "1.for."
-                    + "\n" + "2.Do while."
-                    + "\n" + "3.While."
-                    + "\n" + "4.Salir."
-            );
-            opt = (teclado.nextLine()).charAt(0);
-            switch (opt) {
-                case '1': {
-                    System.out.println("Ingrese el numero de una tabla de multiplicar");
-                    n = Integer.parseInt(teclado.nextLine());
-                    for (int i = 1; i <= 15; i++) {
-                        tabla = n * i;
-                        System.out.println(n + "*" + i + "=" + tabla); }
-
-                }
-                break;
-                case '2': {
-                    System.out.println("Ingrese el numero de una tabla de multiplicar");
-                    n = Integer.parseInt(teclado.nextLine());
-                    do {
-                        tabla = n * cont;
-                        System.out.println(n + "*" + cont + "=" + tabla);
-                        cont++;
-
-                    } while (cont <= 15);
-                }
-                break;
-                case '3':{
-                    System.out.println("Ingrese el numero de una tabla de multiplicar");
-                    n = Integer.parseInt(teclado.nextLine());
-                    while(cont<=15){
-                    
-                          tabla = n * cont;
-                        System.out.println(n + "*" + cont + "=" + tabla);
-                        cont++;
-                    }        
-                        }
-                break;
-            }
-            System.out.println("Desea continuar si/No");
-            respueta = teclado.nextLine().charAt(0);
-        } while ((respueta == 's') || (respueta == 'S'));
-                */
+            
+            do{
+                I =(2*cont1)-1;
                 
-        //Ejercicio 9;
-        
-        double n;
-        double s=0;
-        double p;
-        double S=0;
-       
+            tabla = (I+",");
+            System.out.print(tabla);
+            cont1++;
+            }while(cont1<=cont2);
+            
+            
+            System.out.println("\n");
+            cont2++;
+           cont1=1;
+        }while (I< 15);
+*/
     
-        System.out.println("ingrese la cantidad de notas que desea optener el promedio");
-        n =Double.parseDouble(teclado.nextLine());
-        System.out.println("Ingrese la primera nota");
-        s =Double.parseDouble(teclado.nextLine());
-        S=S+s;
-         cont = (int) n;
-         cont--;
-        do {   
-            System.out.println("Ingrese las demas");
-            s =Double.parseDouble(teclado.nextLine());
-            S=S+s;
-           cont--;
-        } while (cont>=1);
-       p=S/n;
-        System.out.println(p);
-  
+    }
 }
-}
+
