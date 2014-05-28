@@ -606,7 +606,6 @@ public class PracticaSwitch {
             case 15:
                 dia--;
                 mes--;
-                año--;
                 System.out.println(dia + "/" + mes + "/" + año);
                 break;
         }
