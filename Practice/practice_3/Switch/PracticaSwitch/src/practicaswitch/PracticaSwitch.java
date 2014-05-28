@@ -226,8 +226,8 @@ public class PracticaSwitch {
          int n;
          int y =1;
         
-         for (int x = 0; x <3000; x++) {
-         System.out.println("  ");
+        
+   
             
          r = 1+(int)(Math.random()*3000);
         
@@ -347,9 +347,10 @@ public class PracticaSwitch {
          System.out.print("I");
          r = r - 9;
          }
-         }
          */
+         
         //Ejercicio numero 6 fecha anterior.
+        /*
         int año, mes, dia;
         char respuesta = 'n';
         boolean r;
@@ -609,6 +610,48 @@ public class PracticaSwitch {
                 System.out.println(dia + "/" + mes + "/" + año);
                 break;
         }
+        */
+          //Ejeercicio 8.
+        int n;
+        System.out.println("Ingrese un numero");
+        n=Integer.parseInt(teclado.nextLine());
+        
+        if(n>7) 
+        {
+        n= n%7;
+        }
+       
+        switch(n)
+        {
+            case 1:
+                System.out.println("El numero ingresado es lunes");
+                break;
+            case 2 :
+                 System.out.println("El numero ingresado es Martes");
+                break;
+            case 3 :
+                System.out.println("El numero ingresado es Miercoles");
+                break;
+            case 4:
+                 System.out.println("El numero ingresado es Jueves");
+                break;
+                 case 5:
+                 System.out.println("El numero ingresado es Viernes");
+                break;
+                      case 6:
+                 System.out.println("El numero ingresado es Sabado");
+                break;
+                      case 0:
+                 System.out.println("El numero ingresado es Domingo");
+                break;
+                
+                
+                
+        }
+        
 
     }
+  
+    
+    
 }
