@@ -25,7 +25,7 @@ public class JavaApplication15 {
 
             System.out.println("Digite la opcion que desea");
             System.out.println("1:Ejercicio 1");
-            System.out.println("2:Ejercicio 1");
+            System.out.println("2:Ejercicio 2");
             opt = oScanner.nextInt();
             switch (opt) {
                 case 1:
@@ -41,6 +41,10 @@ public class JavaApplication15 {
                     System.out.println(oejercicio2.MediaCadena());
                     System.out.println(oejercicio2.UltimoValor());
                      System.out.println(oejercicio2.Alrevez());
+                    System.out.println(oejercicio2.Guion());
+                    System.out.println( "Tiene una cantidad de:" + oejercicio2.Vocales()+ "vocales");
+                    System.out.println(oejercicio2.Palindromo());
+                             
                     
                     break;
 
