@@ -16,7 +16,7 @@ public class Clss_8 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         int opt;
         String palabra = "";
@@ -28,6 +28,7 @@ public class Clss_8 {
             System.out.println("Ingrese una opccion");
             System.out.println("1.Ejercicipon_1");
             System.out.println("2.Ejercicipon_2");
+            System.out.println("3.Ejercicipon_3");
 
             opt = oScanner.nextInt();
 
@@ -67,9 +68,16 @@ public class Clss_8 {
                     System.out.println(tr.toUppercase());
                     System.out.println(tr.value(n));
                     break;
+                case 3 :
+                      oScanner = new Scanner(System.in);//Resetiar
+                    StringUp oStringUp = new StringUp();  
+                    oStringUp.setHilera("hoLA Mundo");
+                    System.out.println(oStringUp.subString(2, 4));
+                    System.out.println(oStringUp.toUpperCase());
+                    break;
             }
 
-        } while (opt < 5);
+        } while (opt < 7);
 
     }
 

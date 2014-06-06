@@ -54,7 +54,7 @@ public class ejercicio1 {
         String retorno = "";
         for (int i = 0; i < getCadena().length(); i++) {
 
-            if ((getCadena().charAt(i) == ' ') || (i > getCadena().length() - 2)) {
+            if ((getCadena().charAt(i) == ' ') || (i > getCadena().length()-3 )) {
                 if (palabra.equals(getBuscar())) {
                     palabra = "-" + palabra + " ";
                 } else {
