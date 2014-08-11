@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clss_8;
+package clase8;
 
 /**
- *
+ *Date:04/06/2014
  * @author JohanAdrian
  */
 public class StringUp {

@@ -2,10 +2,10 @@
 
 
  */
-package clss_8;
+package clase8;
 
 /**
- *
+ *Date:04/06/2014
  * @author JohanAdrian
  */
 public class ejercicio1 {

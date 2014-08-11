@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clss_8;
+package clase8;
 
 import java.util.Scanner;
 
 /**
- *
+ *Date:04/06/2014
  * @author JohanAdrian
  */
-public class Clss_8 {
+public class clase8 {
 
     /**
      * @param args the command line arguments
